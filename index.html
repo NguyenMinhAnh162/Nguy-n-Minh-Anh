@@ -1,98 +1,159 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LIÊN QUÂN</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+    </style>
 </head>
-<style>
-    body {
-        
-        background-image: url(ac.jpg);
-background-repeat: no-repeat;
-background-size: cover;
-background-position: center;
-    color: white;
-    }
-    table,th,td {
 
-        border : 2 solid white;
-        margin: 0 auto;
-        font-size: larger;
-        text-align: center;
-    }
-
-</style>
 <body>
-    <h1 style="color: rgba(255, 76, 142, 0.982); text-align: center;">
-        List món must try khi đến Hà Nội
-    </h1>
-<p>
-    <table style="width: 80%;" >
-        <colgroup>
-            <col span="3" style="background-color: pink;" >
-        </colgroup>
-        <tr>
-            <th>STT</th>
-            <th>Tên món</th>
-            <th>Đã thưởng thức</th>
-        </tr>
-        <tr>
-            <td>
-                1
-            </td>
-            <td>
-                Bún chả
-            </td>
-            <td>
-                <input type="checkbox">
-            </td>
-        </tr>
-        <tr>
-            <td>
-                2
-            </td>
-            <td>
-                Phở bò
-            </td>
-            <td>
-                <input type="checkbox">
-            </td>
-        
+    <!-- header start -->
+    <div class="bg-image">
+    <nav id="menu">
 
-        </tr>
-        <tr>
-            <td>
-                3
-            </td>
-            <td>
-                Bánh cuốn
-            </td>
-            <td>
-                <input type="checkbox">
-            </td>
-        </tr>
-        <tr>
-            <td>
-                4
-            </td>
-            <td>
-                Bánh mì Vợ Ong Vàng
-            </td>
-            <td>
-                <input type="checkbox">
-            </td>
-        </tr>
-        <tr>
-            <td>
-                5
-            </td>
-            <td>
-                Xiên bẩn khu Bắc Kinh Xây
-            </td>
-            <td>
-                <input type="checkbox">
-            </td>
-        </tr>
-    </table>
-</p>
+    <img class="logo" src="logo.png" alt="logo">
+
+    <ul class="letren">
+        <li><a class="nav-link" href="#home">HOME</a></li>
+        <li><a class="nav-link" href="#gameplay">GAME PLAY</a></li>
+        <li><a class="nav-link" href="#news">NEWS</a></li>
+        <li><a class="nav-link" href="#update">UPDATE</a></li>
+        <li><a class="nav-link" href="#collapse">COLLAPSE</a></li>
+        <li><a class="nav-link connect" href="#connect">CONNECT</a></li>
+    </ul>
+
+    </nav>
+     <!-- header end -->
+      <!-- body1 -->
+    <div class="gioithieu">
+    <div class="gioithieu-text">
+        <p class="welcome">WELCOME TO</p>
+        <h1>Liên Quân Mobile Arena
+        <br>Discover heroes, epic battles, and pro strategies. Become a true champion!</h1>
+    </div>
+    </div>
+    <div class="hero">
+    <div class="hero-content">
+        <a href="#" class="download-btn">DOWNLOAD NOW</a>
+    </div>
+    </div>
+    <!-- body1end -->
+     <!-- body2 -->
+    <!-- body2 -->
+<!-- body2 -->
+<section class="about">
+    <div class="about-container">
+
+        <div class="about-text">
+            <p class="about-small">About The Game</p>
+            <h2>Challenge Your Limits.</h2>
+
+            <p>
+                Heroes are the core of Arena of Valor. 
+                Each hero has unique skills and roles 
+                like Tank, Mage, Assassin, Marksman, 
+                and Support. Choosing the right hero 
+                helps your team win the battle. 
+            </p>
+
+            <a href="#" class="read-btn">Read More</a>
+        </div>
+
+        <div class="about-img">
+            <img src="Krixi-featured.jpg" alt="about" class="flip-img">
+        </div>
+
+    </div>
+</section>
+<!-- body2end -->
+ <!-- body3 -->
+ <!-- <section class="gallery"> -->
+    <section class="video-section">
+    <video autoplay muted loop class="bg-video">
+    <source src="snaptik_7463004291616476423_hd.mp4" type="video/mp4">
+</video>
+</video>
+    <h2>Arena of Valor in Vietnam has approximately 18-20 SSS-tier skins.</h2>
+
+    <div class="slider">
+        <div class="slide-track">
+
+            <img src="bannerImage.jpg" alt="">
+            <img src="thumbImage (1).jpg" alt="">
+            <img src="thumbImage (2).jpg" alt="">
+            <img src="thumbImage.jpg" alt="">
+            <img src="16712thumbImage.jpg" alt="">
+            <img src="bannerImage.jpg" alt="">
+            <img src="thumbImage (1).jpg" alt="">
+            <img src="thumbImage (2).jpg" alt="">
+            <img src="thumbImage.jpg" alt="">
+            <img src="16712thumbImage.jpg" alt="">
+
+        </div>
+    </div>
+
+</section>
+<!-- body3end -->
+<!-- body4 -->
+ <!-- body4 Contact -->
+<section class="contact">
+
+    <h2 class="contact-title">Contact Us</h2>
+
+    <div class="contact-container">
+
+        <div class="contact-left">
+            <input type="text" placeholder="Your Name">
+            <input type="email" placeholder="Email address">
+            <input type="text" placeholder="Your Subject">
+        </div>
+
+        <div class="contact-right">
+            <textarea placeholder="Your message"></textarea>
+            <button class="send-btn">Send message</button>
+        </div>
+
+    </div>
+</section>
+<!-- body4end -->
+
+<footer class="footer">
+
+    <video autoplay muted loop class="footer-video">
+        <source src="1703310539042279840.mp4" type="video/mp4">
+    </video>
+
+    <div class="footer-content">
+
+        <div class="footer-left">
+            <img src="logo.png" class="footer-logo">
+        </div>
+
+        <div class="footer-center">
+            <p>Page cụa Minh Anh</p>
+        </div>
+
+        <div class="footer-right">
+            <a href="#" class="social"></a>
+            <a href="#" class="social"></a>
+            <a href="#" class="social"></a>
+            <a href="#" class="social"></a>
+            <a href="#" class="social"></a>
+            <a href="#" class="social"></a>
+        </div>
+
+    </div>
+
+</footer>
 </body>
 </html>
