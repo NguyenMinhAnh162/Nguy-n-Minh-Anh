@@ -1,0 +1,413 @@
+#menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+}
+
+.logo{
+    width: 150px;
+}
+
+.letren{
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+.nav-link{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.nav-link:hover{
+    color: orange;
+}
+
+.bg-image{
+    background-image: url("0905_tuong-lien-quan.jpg");
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.gioithieu{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.gioithieu-text{
+    width: 50%;
+    padding-left: 80px;
+    color: white;
+}
+
+.welcome{
+    color: rgb(255, 184, 53);
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.download-btn{
+    display: inline-block;
+    margin-top: 20px;
+    padding: 15px 35px;
+    background: #ff7a00;
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: bold;
+    transition: 0.3s;box-shadow: 0.2s;
+    box-shadow:
+    0 0 10px #ff7a00,
+    0 0 20px rgba(255,122,0,0.7),
+    0 0 40px rgba(255,122,0,0.5);
+}
+
+.download-btn:hover{
+    background-color: white;
+    color: orange;
+}
+
+.hero-content{
+    position: absolute;
+    top: 40%;
+    left: 80px;
+    color: white;
+    max-width: 500px;
+}
+
+.about{
+    padding: 80px 100px;
+    background: #f5f5f5;
+}
+
+.about-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.about-text{
+    width: 50%;
+}
+
+.about-small{
+    color: #ff7a00;
+    font-weight: bold;
+}
+
+.about-text h2{
+    font-size: 40px;
+    margin: 10px 0 20px 0;
+}
+
+.about-text p{
+    line-height: 1.6;
+    color: #555;
+}
+
+.about-img{
+    width: 50%;
+    perspective: 1000px;
+}
+
+.flip-img{
+    width: 100%;
+    border-radius: 12px;
+    border: 3px solid #ff7a00;
+
+    transition: transform 0.8s, box-shadow 0.4s;
+
+    box-shadow:
+    0 0 10px #ff7a00,
+    0 0 20px rgba(255,122,0,0.7),
+    0 0 40px rgba(255,122,0,0.5);
+}
+
+/* hover */
+
+.about-img:hover .flip-img{
+
+    transform: rotateY(180deg) scale(1.05);
+
+    box-shadow:
+    0 0 20px #ff7a00,
+    0 0 40px #ff7a00,
+    0 0 80px rgba(255,122,0,0.8);
+}
+
+.read-btn{
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 30px;
+    background: #ff7a00;
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
+    transition: 0.3s;
+}
+
+.read-btn:hover{
+    background: #e56700;
+}
+
+.gallery{
+    padding: 80px;
+    text-align: center;
+    background: #0a0034;
+    color: white;
+}
+
+.slider{
+    overflow: hidden;
+    width: 100%;
+}
+
+.slide-track{
+    display: flex;
+    width: calc(350px * 10);
+    animation: scroll 25s linear infinite;
+}
+
+.slide-track img{
+    width: 350px;
+    height: 250px;
+    object-fit: cover;
+    margin: 15px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.slide-track img:hover{
+    transform: scale(1.1);
+}
+
+@keyframes scroll{
+    0%{
+        transform: translateX(0);
+    }
+
+    100%{
+        transform: translateX(calc(-350px * 5));
+    }
+}
+
+.video-section{
+    position: relative;
+    padding: 80px;
+    text-align: center;
+    color: white;
+    overflow: hidden;
+}
+
+.bg-video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.content{
+    position: relative;
+    z-index: 2;
+}
+
+.contact{
+    background: black;
+    padding: 100px 10%;
+    color: white;
+}
+
+.contact-title{
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 60px;
+}
+
+.contact-container{
+    display: flex;
+    gap: 40px;
+}
+
+.contact-left{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.contact-right{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contact input{
+    padding: 18px;
+    border-radius: 8px;
+    border: none;
+    background: #e5e5e5;
+    font-size: 16px;
+}
+
+.contact textarea{
+    height: 140px;
+    padding: 18px;
+    border-radius: 8px;
+    border: none;
+    background: #e5e5e5;
+    font-size: 16px;
+}
+
+.send-btn{
+    width: 200px;
+    padding: 15px;
+    border: none;
+    border-radius: 30px;
+    background: #60faff;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.footer{
+    position: relative;
+    overflow: hidden;
+    padding: 80px;
+    color: white;
+}
+
+.footer-video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.footer-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-logo{
+    width: 150px;
+}
+
+.footer-right{
+    display: flex;
+    gap: 15px;
+}
+
+.social{
+    width: 50px;
+    height: 50px;
+    background: #60faff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+h1{
+    font-size: 48px;
+    margin: 20px 0;
+    line-height: 1.2;
+}
+
+.connect{
+    color: #ffffff;
+}
+
+.connect:hover{
+    color: #ffa200;
+}
+
+.hero{
+    position: relative;
+}
+
+.video-section h2{
+    font-size: 36px;
+    margin-bottom: 40px;
+    position: relative;
+    z-index: 2;
+}
+
+.footer-center p{
+    font-size: 18px;
+    margin: 0;
+    text-align: center;
+}
+
+.social:hover{
+    background: #00ccff;
+}
+
+/* Responsive */
+
+@media (max-width: 768px){
+
+    #menu{
+        padding: 20px;
+    }
+
+    .letren{
+        gap: 15px;
+    }
+
+    .nav-link{
+        font-size: 16px;
+    }
+
+    .gioithieu-text{
+        width: 80%;
+        padding-left: 40px;
+    }
+
+    h1{
+        font-size: 20px;
+    }
+
+    .about-container{
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .about-text,
+    .about-img{
+        width: 100%;
+    }
+
+    .contact-container{
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .footer-content{
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+}
